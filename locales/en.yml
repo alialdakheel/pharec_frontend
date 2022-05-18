@@ -1,0 +1,21 @@
+button:
+  about: About
+  back: Back
+  go: GO
+  home: Home
+  toggle_dark: Toggle dark mode
+  toggle_langs: Change languages
+  show: Show
+  check-url: Check URL
+intro:
+  name: Pharec
+  desc: Phishing website Automatic Recognition using computer vision tech.
+  dynamic-route: Demo of dynamic route
+  hi: Hi, {name}!
+  aka: Also known as
+  whats-your-name: What's your name?
+  enter-url: Enter URL
+result:
+  website: Website
+  predicted_domain: Predicted domain
+not-found: Not found

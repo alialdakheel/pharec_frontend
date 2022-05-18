@@ -1,0 +1,21 @@
+button:
+  about: حول
+  back: رجوع
+  go: تجربة
+  home: الرئيسية
+  toggle_dark: التغيير إلى الوضع المظلم
+  toggle_langs: تغيير اللغة
+  show: اظهار
+  check-url: تحقق من الرابط
+intro:
+  name: فارق
+  desc: اداة معززة بتقنيات تعلم الآلة (الرؤية الحاسوبية) للتعرف على صفحات التصيد والاحتيال السيبراني
+  dynamic-route: عرض لتوجيهات ديناميكية
+  hi: مرحبا {name}
+  aka: معروف أيضا تحت مسمى
+  whats-your-name: ما إسمك؟
+  enter-url: ادخل رابط
+result:
+  website: الموقع
+  predicted_domain: النطاق المتوقع
+not-found: صفحة غير موجودة
