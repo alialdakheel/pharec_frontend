@@ -3,7 +3,7 @@
 // const api_url = 'http://localhost:8000/api/v1'
 const base_url = ''
 const api_url = '/api/v1'
-const pharecLogo = new URL('../../public/pharec-96.PNG', import.meta.url).href
+const pharecLogo = new URL('/pharec-96.PNG', import.meta.url).href
 
 let url = $ref('')
 const fix_url = () => {
@@ -39,6 +39,14 @@ const check_url = async () => {
     fix_url()
     resp = await request_check(url)
 }
+const fill_example = (n: Number) => {
+  if (n === 1)
+    url = 'https://apple.com'
+  else if (n === 2)
+    url = 'https://dropbox.com/login'
+  else
+    url = url
+} 
 
 const { t } = useI18n()
 </script>
@@ -91,6 +99,23 @@ const { t } = useI18n()
 
     <div py-4 />
 
+    <div p-1>
+      <p text-sm inline>Example: </p>
+      <button
+        px-2 text-sm rounded-full bg-teal-600
+        @click="fill_example(1)"
+      >
+      apple.com
+      </button>
+      <p pe-1 inline text-sm>,</p>
+      <button
+        px-2 text-sm rounded-full bg-teal-600
+        @click="fill_example(2)"
+      >
+      dropbox.com/login
+      </button>
+    </div>
+
     <input
       id="input-url"
       v-model="url"
@@ -110,7 +135,7 @@ const { t } = useI18n()
     <div>
       <button
         btn m-3 text-sm
-        :disabled="!url"
+        :disabled="!url || url.length > 25"
         @click="check_url"
       >
         {{ t('button.check-url') }}
