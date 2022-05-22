@@ -1,142 +1,52 @@
 {
-  "vite/modulepreload-polyfill": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "locales/ar.yml": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "locales/en.yml": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "node_modules/.pnpm/@intlify+shared@9.1.10/node_modules/@intlify/shared/dist/shared.esm-bundler.js": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "node_modules/.pnpm/@intlify+message-resolver@9.1.10/node_modules/@intlify/message-resolver/dist/message-resolver.esm-bundler.js": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "node_modules/.pnpm/@intlify+runtime@9.1.10/node_modules/@intlify/runtime/dist/runtime.esm-bundler.js": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "node_modules/.pnpm/@intlify+message-compiler@9.1.10/node_modules/@intlify/message-compiler/dist/message-compiler.esm-bundler.js": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "node_modules/.pnpm/@intlify+devtools-if@9.1.10/node_modules/@intlify/devtools-if/dist/devtools-if.esm-bundler.js": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "node_modules/.pnpm/@intlify+core-base@9.1.10/node_modules/@intlify/core-base/dist/core-base.esm-bundler.js": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "node_modules/.pnpm/@vue+shared@3.2.33/node_modules/@vue/shared/dist/shared.esm-bundler.js": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "node_modules/.pnpm/@vue+reactivity@3.2.33/node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "node_modules/.pnpm/@vue+runtime-core@3.2.33/node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "node_modules/.pnpm/@vue+runtime-dom@3.2.33/node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "node_modules/.pnpm/vue-i18n@9.1.10_vue@3.2.33/node_modules/vue-i18n/dist/vue-i18n.runtime.esm-bundler.js": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "src/modules/i18n.ts": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "\u0000commonjsHelpers.js": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "\u0000/home/falco/pharec_frontend/node_modules/.pnpm/nprogress@0.2.0/node_modules/nprogress/nprogress.js?commonjs-module": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "node_modules/.pnpm/nprogress@0.2.0/node_modules/nprogress/nprogress.js": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "src/modules/nprogress.ts": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "node_modules/.pnpm/vue-demi@0.12.5_vue@3.2.33/node_modules/vue-demi/lib/index.mjs": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "node_modules/.pnpm/pinia@2.0.14_ytvqwwdyss532bvoq2clv4ed5m/node_modules/pinia/dist/pinia.esm-browser.js": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "src/modules/pinia.ts": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "vite/preload-helper": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "src/modules/pwa.ts": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "node_modules/.pnpm/vue-router@4.0.15_vue@3.2.33/node_modules/vue-router/dist/vue-router.esm-bundler.js": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "node_modules/.pnpm/@vueuse+head@0.7.6_vue@3.2.33/node_modules/@vueuse/head/dist/index.mjs": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "node_modules/.pnpm/vite-ssg@0.20.0_uhne5wm5qpolinapsgjqcugibi/node_modules/vite-ssg/dist/chunks/state.mjs": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "node_modules/.pnpm/vite-ssg@0.20.0_uhne5wm5qpolinapsgjqcugibi/node_modules/vite-ssg/dist/chunks/ClientOnly.mjs": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "node_modules/.pnpm/vite-ssg@0.20.0_uhne5wm5qpolinapsgjqcugibi/node_modules/vite-ssg/dist/index.mjs": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "node_modules/.pnpm/@vueuse+shared@8.4.2_vue@3.2.33/node_modules/@vueuse/shared/index.mjs": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "node_modules/.pnpm/@vueuse+core@8.4.2_vue@3.2.33/node_modules/@vueuse/core/index.mjs": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "src/composables/dark.ts": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "src/components/Footer.vue": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "plugin-vue:export-helper": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "src/layouts/default.vue": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "../../../@vite-plugin-vue-layouts/generated-layouts": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "src/App.vue": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "../../../@vite-plugin-pages/route-block": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "src/pages/index.vue": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "../../../@vite-plugin-pages/generated-pages?id=~pages": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "node_modules/.pnpm/@unocss+reset@0.33.2/node_modules/@unocss/reset/tailwind.css": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "src/styles/main.css": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "../../../__uno.css": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "src/main.ts": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "index.html": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
-  "assets/app.01fac440.js-unocss-hash.css": [
-    "/assets/pharec-96.74db69a9.PNG"
-  ],
+  "vite/modulepreload-polyfill": [],
+  "locales/ar.yml": [],
+  "locales/en.yml": [],
+  "node_modules/.pnpm/@intlify+shared@9.1.10/node_modules/@intlify/shared/dist/shared.esm-bundler.js": [],
+  "node_modules/.pnpm/@intlify+message-resolver@9.1.10/node_modules/@intlify/message-resolver/dist/message-resolver.esm-bundler.js": [],
+  "node_modules/.pnpm/@intlify+runtime@9.1.10/node_modules/@intlify/runtime/dist/runtime.esm-bundler.js": [],
+  "node_modules/.pnpm/@intlify+message-compiler@9.1.10/node_modules/@intlify/message-compiler/dist/message-compiler.esm-bundler.js": [],
+  "node_modules/.pnpm/@intlify+devtools-if@9.1.10/node_modules/@intlify/devtools-if/dist/devtools-if.esm-bundler.js": [],
+  "node_modules/.pnpm/@intlify+core-base@9.1.10/node_modules/@intlify/core-base/dist/core-base.esm-bundler.js": [],
+  "node_modules/.pnpm/@vue+shared@3.2.33/node_modules/@vue/shared/dist/shared.esm-bundler.js": [],
+  "node_modules/.pnpm/@vue+reactivity@3.2.33/node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js": [],
+  "node_modules/.pnpm/@vue+runtime-core@3.2.33/node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js": [],
+  "node_modules/.pnpm/@vue+runtime-dom@3.2.33/node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js": [],
+  "node_modules/.pnpm/vue-i18n@9.1.10_vue@3.2.33/node_modules/vue-i18n/dist/vue-i18n.runtime.esm-bundler.js": [],
+  "src/modules/i18n.ts": [],
+  "\u0000commonjsHelpers.js": [],
+  "\u0000/home/falco/pharec_frontend/node_modules/.pnpm/nprogress@0.2.0/node_modules/nprogress/nprogress.js?commonjs-module": [],
+  "node_modules/.pnpm/nprogress@0.2.0/node_modules/nprogress/nprogress.js": [],
+  "src/modules/nprogress.ts": [],
+  "node_modules/.pnpm/vue-demi@0.12.5_vue@3.2.33/node_modules/vue-demi/lib/index.mjs": [],
+  "node_modules/.pnpm/pinia@2.0.14_ytvqwwdyss532bvoq2clv4ed5m/node_modules/pinia/dist/pinia.esm-browser.js": [],
+  "src/modules/pinia.ts": [],
+  "vite/preload-helper": [],
+  "src/modules/pwa.ts": [],
+  "node_modules/.pnpm/vue-gtag@2.0.1_vue@3.2.33/node_modules/vue-gtag/dist/vue-gtag.esm.js": [],
+  "src/modules/vue-gtag.ts": [],
+  "node_modules/.pnpm/vue-router@4.0.15_vue@3.2.33/node_modules/vue-router/dist/vue-router.esm-bundler.js": [],
+  "node_modules/.pnpm/@vueuse+head@0.7.6_vue@3.2.33/node_modules/@vueuse/head/dist/index.mjs": [],
+  "node_modules/.pnpm/vite-ssg@0.20.0_uhne5wm5qpolinapsgjqcugibi/node_modules/vite-ssg/dist/chunks/state.mjs": [],
+  "node_modules/.pnpm/vite-ssg@0.20.0_uhne5wm5qpolinapsgjqcugibi/node_modules/vite-ssg/dist/chunks/ClientOnly.mjs": [],
+  "node_modules/.pnpm/vite-ssg@0.20.0_uhne5wm5qpolinapsgjqcugibi/node_modules/vite-ssg/dist/index.mjs": [],
+  "node_modules/.pnpm/@vueuse+shared@8.4.2_vue@3.2.33/node_modules/@vueuse/shared/index.mjs": [],
+  "node_modules/.pnpm/@vueuse+core@8.4.2_vue@3.2.33/node_modules/@vueuse/core/index.mjs": [],
+  "src/composables/dark.ts": [],
+  "src/components/Footer.vue": [],
+  "plugin-vue:export-helper": [],
+  "src/layouts/default.vue": [],
+  "../../../@vite-plugin-vue-layouts/generated-layouts": [],
+  "src/App.vue": [],
+  "../../../@vite-plugin-pages/route-block": [],
+  "src/pages/index.vue": [],
+  "../../../@vite-plugin-pages/generated-pages?id=~pages": [],
+  "node_modules/.pnpm/@unocss+reset@0.33.2/node_modules/@unocss/reset/tailwind.css": [],
+  "src/styles/main.css": [],
+  "../../../__uno.css": [],
+  "src/main.ts": [],
+  "index.html": [],
+  "assets/app.cbaa49a7.js-unocss-hash.css": [],
   "node_modules/.pnpm/workbox-window@6.5.3/node_modules/workbox-window/build/workbox-window.prod.es5.mjs": [
     "/assets/virtual_pwa-register.04637613.js"
   ],
@@ -144,24 +54,24 @@
     "/assets/virtual_pwa-register.04637613.js"
   ],
   "src/layouts/404.vue": [
-    "/assets/404.1fffc0e1.js"
+    "/assets/404.4e4c0894.js"
   ],
   "src/layouts/home.vue": [
-    "/assets/home.83b39986.js"
+    "/assets/home.5933d89c.js"
   ],
   "src/pages/README.md": [
-    "/assets/README.8e25e213.js"
+    "/assets/README.d495a1c9.js"
   ],
   "src/pages/[...all].vue": [
-    "/assets/_...all_.16842557.js"
+    "/assets/_...all_.7ff91818.js"
   ],
   "src/pages/about.md": [
-    "/assets/about.c8e4e5ff.js"
+    "/assets/about.4e10e1ec.js"
   ],
   "src/stores/user.ts": [
-    "/assets/_name_.950cc4cf.js"
+    "/assets/_name_.d3cde47a.js"
   ],
   "src/pages/hi/[name].vue": [
-    "/assets/_name_.950cc4cf.js"
+    "/assets/_name_.d3cde47a.js"
   ]
 }
