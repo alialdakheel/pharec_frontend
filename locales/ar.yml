@@ -18,4 +18,5 @@ intro:
 result:
   website: الموقع
   predicted_domain: النطاق المتوقع
+  predicted_conf: وثوق النموذج
 not-found: صفحة غير موجودة

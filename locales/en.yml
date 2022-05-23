@@ -18,4 +18,5 @@ intro:
 result:
   website: Website
   predicted_domain: Predicted domain
+  predicted_conf: Predicted confidence
 not-found: Not found

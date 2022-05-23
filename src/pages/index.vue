@@ -4,16 +4,14 @@
 const base_url = ''
 const api_url = '/api/v1'
 const pharecLogo = new URL('/pharec-96.PNG', import.meta.url).href
+const url_char_limit = 32
 
 let url = $ref('')
-const fix_url = () => {
-  if (url.slice(0, 4) !== "http"){
-    url = 'http://' + url
-  } 
-}
 let resp = $ref({
   url: '', 
   predicted_domain: '',
+  predicted_phish: false,
+  predicted_conf: '',
   image_path: ''
 })
 
@@ -29,14 +27,28 @@ const request_check = async (url: String) => {
       description: 'Sent by frontend',
     }),
   })
-  // console.log('Response', response.json())
-  // return JSON.stringify(response.json())
+
   return response.json()
+}
+
+const fix_url = () => {
+  url = url.trim()
+  if (url.endsWith('/'))
+    url = url.slice(0, url.length - 1)
+  if (url.slice(0, 4) !== "http")
+    url = 'http://' + url
 }
 
 const check_url = async () => {
   if (url)
     fix_url()
+    resp = {
+      url: '', 
+      predicted_domain: '',
+      predicted_phish: false,
+      predicted_conf: '',
+      image_path: ''
+    }
     resp = await request_check(url)
 }
 const fill_example = (n: Number) => {
@@ -85,7 +97,7 @@ const { t } = useI18n()
 
     <div>
       <p v-if="resp.url" class="text-sm opacity75">
-        {{ t('result.website') }}: {{ url }}
+        {{ t('result.website') }}: {{ resp.url }}
       </p>
     </div>
 
@@ -94,6 +106,13 @@ const { t } = useI18n()
     <div>
       <p v-if="resp.predicted_domain" class="text-sm">
         {{ t('result.predicted_domain') }}: {{ resp.predicted_domain }}
+        <div v-if="resp.predicted_phish===false" i-carbon:thumbs-up text-sm mx-2 inline-block/>
+        <div v-if="resp.predicted_phish===true" i-carbon:thumbs-down text-sm mx-2 inline-block/>
+      </p>
+    </div>
+    <div>
+      <p v-if="resp.predicted_conf" class="text-sm">
+        {{ t('result.predicted_conf') }}: {{ resp.predicted_conf }}
       </p>
     </div>
 
@@ -102,14 +121,14 @@ const { t } = useI18n()
     <div p-1>
       <p text-sm inline>Example: </p>
       <button
-        px-2 text-sm rounded-full bg-teal-600
+        px-2 py-0 text-sm rounded-full bg-teal-600 btn
         @click="fill_example(1)"
       >
       apple.com
       </button>
       <p pe-1 inline text-sm>,</p>
       <button
-        px-2 text-sm rounded-full bg-teal-600
+        px-2 py-0 text-sm rounded-full bg-teal-600 btn
         @click="fill_example(2)"
       >
       dropbox.com/login
@@ -124,7 +143,7 @@ const { t } = useI18n()
       type="url"
       autocomplete="false"
       p="x4 y2"
-      w="250px"
+      w="350px"
       text="center"
       bg="transparent"
       border="~ rounded gray-200 dark:gray-700"
@@ -135,7 +154,7 @@ const { t } = useI18n()
     <div>
       <button
         btn m-3 text-sm
-        :disabled="!url || url.length > 25"
+        :disabled="!url || url.length > url_char_limit"
         @click="check_url"
       >
         {{ t('button.check-url') }}
