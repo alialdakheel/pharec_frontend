@@ -46,7 +46,7 @@
   "../../../__uno.css": [],
   "src/main.ts": [],
   "index.html": [],
-  "assets/app.f5d2ccd1.js-unocss-hash.css": [],
+  "assets/app.82548ba8.js-unocss-hash.css": [],
   "node_modules/.pnpm/workbox-window@6.5.3/node_modules/workbox-window/build/workbox-window.prod.es5.mjs": [
     "/assets/virtual_pwa-register.04637613.js"
   ],
@@ -54,24 +54,24 @@
     "/assets/virtual_pwa-register.04637613.js"
   ],
   "src/layouts/404.vue": [
-    "/assets/404.e7827f04.js"
+    "/assets/404.40821235.js"
   ],
   "src/layouts/home.vue": [
-    "/assets/home.534a4587.js"
+    "/assets/home.f3c7e038.js"
   ],
   "src/pages/README.md": [
-    "/assets/README.370f9f01.js"
+    "/assets/README.bc4648d6.js"
   ],
   "src/pages/[...all].vue": [
-    "/assets/_...all_.d9f74b6a.js"
+    "/assets/_...all_.6bd204b7.js"
   ],
   "src/pages/about.md": [
-    "/assets/about.fe9a26b3.js"
+    "/assets/about.a15691bc.js"
   ],
   "src/stores/user.ts": [
-    "/assets/_name_.126c0b46.js"
+    "/assets/_name_.a406081c.js"
   ],
   "src/pages/hi/[name].vue": [
-    "/assets/_name_.126c0b46.js"
+    "/assets/_name_.a406081c.js"
   ]
 }
