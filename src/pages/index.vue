@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import NProgress from 'nprogress'
 // const base_url = 'http://localhost:8000'
 // const api_url = 'http://localhost:8000/api/v1'
 const base_url = ''
@@ -14,9 +15,11 @@ let resp = $ref({
   predicted_conf: '',
   image_path: ''
 })
+let check_link_error = $ref('')
 
 const request_check = async (url: String) => {
-  const response = await fetch(`${api_url}/check_url`, {
+  NProgress.start()
+  return fetch(`${api_url}/check_url`, {
     method: 'POST',
     mode: 'cors',
     headers: {
@@ -27,8 +30,17 @@ const request_check = async (url: String) => {
       description: 'Sent by frontend',
     }),
   })
+  .then((response) => {
+    NProgress.done()
 
-  return response.json()
+    if (!response.ok) {
+      throw new Error('Check link failed with error resp')
+    }
+    return response.json()
+  })
+  .catch(error => {
+      throw new Error(`Check link error failed with ${error}`)
+  })
 }
 
 const fix_url = () => {
@@ -49,7 +61,15 @@ const check_url = async () => {
       predicted_conf: '',
       image_path: ''
     }
-    resp = await request_check(url)
+    request_check(url)
+    .then((data) => {
+      if (data) {
+        resp = data
+      }
+    })
+    .catch((error) => {
+      check_link_error = 'Check link failed'
+    })
 }
 const fill_example = (n: Number) => {
   if (n === 1)
@@ -113,6 +133,14 @@ const { t } = useI18n()
     <div>
       <p v-if="resp.predicted_conf" class="text-sm">
         {{ t('result.predicted_conf') }}: {{ resp.predicted_conf }}
+      </p>
+    </div>
+    <div v-if="check_link_error">
+      <p color-red text-sm>
+        Check link failed please try again later...
+      </p>
+      <p color-red text-sm>
+        Error: {{ check_link_error }}
       </p>
     </div>
 
