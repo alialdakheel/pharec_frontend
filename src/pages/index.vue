@@ -55,10 +55,10 @@ const check_url = async () => {
   if (url)
     fix_url()
     resp = {
-      url: 'http://google.com', 
-      predicted_domain: 'google',
-      predicted_phish: true,
-      predicted_conf: '42.23',
+      url: '', 
+      predicted_domain: '',
+      predicted_phish: false,
+      predicted_conf: '',
       image_path: ''
     }
     request_check(url)

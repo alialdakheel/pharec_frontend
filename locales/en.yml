@@ -18,5 +18,5 @@ intro:
 result:
   website: 'Website:'
   predicted_domain: 'Predicted domain:'
-  predicted_conf: 'Predicted confidence:'
+  predicted_conf: 'Model confidence:'
 not-found: Not found
