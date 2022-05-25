@@ -92,20 +92,19 @@ export default defineConfig({
         theme_color: '#ffffff',
         icons: [
           {
-            src: '/pwa-192x192.png',
-            sizes: '192x192',
+            src: '/new-logo-pharec-64.PNG',
+            sizes: '96x96',
             type: 'image/png',
           },
           {
-            src: '/pwa-512x512.png',
-            sizes: '512x512',
+            src: '/new-logo-pharec-128.PNG',
+            sizes: '96x96',
             type: 'image/png',
           },
           {
-            src: '/pwa-512x512.png',
-            sizes: '512x512',
+            src: '/new-logo-pharec-256.PNG',
+            sizes: '96x96',
             type: 'image/png',
-            purpose: 'any maskable',
           },
           {
             src: '/pharec-96.PNG',

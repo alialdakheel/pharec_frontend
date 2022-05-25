@@ -4,7 +4,7 @@ import NProgress from 'nprogress'
 // const api_url = 'http://localhost:8000/api/v1'
 const base_url = ''
 const api_url = '/api/v1'
-const pharecLogo = new URL('/pharec-96.PNG', import.meta.url).href
+const pharecLogo = new URL('/new-logo-pharec-64.png', import.meta.url).href
 const url_char_limit = 32
 
 let url = $ref('')
@@ -55,10 +55,10 @@ const check_url = async () => {
   if (url)
     fix_url()
     resp = {
-      url: '', 
-      predicted_domain: '',
-      predicted_phish: false,
-      predicted_conf: '',
+      url: 'http://google.com', 
+      predicted_domain: 'google',
+      predicted_phish: true,
+      predicted_conf: '42.23',
       image_path: ''
     }
     request_check(url)
@@ -85,14 +85,10 @@ const { t } = useI18n()
 
 <template>
   <div>
-    <div text-2xl>
-      <div i-carbon-fish inline-block />
-    </div>
-
-    <section class="rounded-full container m-auto">
+    <section class="container m-auto">
       <img 
       :src="pharecLogo"
-      class="rounded-full m-auto p2 object-center"
+      class="rounded m-auto object-center"
       />
     </section>
 
@@ -106,45 +102,6 @@ const { t } = useI18n()
     </p>
 
     <div py-1 />
-
-    <section class="container m-auto object-center w-1/3 rounded-lg">
-      <img v-if="resp.image_path" 
-      :src="`${base_url}/${resp.image_path}`"
-      class="rounded m1"/>
-    </section>
-
-    <div py-1 />
-
-    <div>
-      <p v-if="resp.url" class="text-sm opacity75">
-        {{ t('result.website') }}: {{ resp.url }}
-      </p>
-    </div>
-
-    <div py-1 />
-
-    <div>
-      <p v-if="resp.predicted_domain" class="text-sm">
-        {{ t('result.predicted_domain') }}: {{ resp.predicted_domain }}
-        <div v-if="resp.predicted_phish===false" i-carbon:thumbs-up text-sm mx-2 inline-block/>
-        <div v-if="resp.predicted_phish===true" i-carbon:thumbs-down text-sm mx-2 inline-block/>
-      </p>
-    </div>
-    <div>
-      <p v-if="resp.predicted_conf" class="text-sm">
-        {{ t('result.predicted_conf') }}: {{ resp.predicted_conf }}
-      </p>
-    </div>
-    <div v-if="check_link_error">
-      <p color-red text-sm>
-        Check link failed please try again later...
-      </p>
-      <p color-red text-sm>
-        Error: {{ check_link_error }}
-      </p>
-    </div>
-
-    <div py-4 />
 
     <div p-1>
       <p text-sm inline>Example: </p>
@@ -188,6 +145,55 @@ const { t } = useI18n()
         {{ t('button.check-url') }}
       </button>
     </div>
+
+    <div py-1 />
+
+    <div>
+      <p v-if="resp.url" class="text-sm opacity75">
+        {{ t('result.website') }}
+      </p>
+      <span text-sm opacity75> {{resp.url}} </span>
+    </div>
+
+    <div py-1 />
+
+    <section class="container m-auto object-center w-1/3 rounded-lg">
+      <img v-if="resp.image_path" 
+      :src="`${base_url}/${resp.image_path}`"
+      class="rounded m1"/>
+    </section>
+
+    <div py-1 />
+
+    <div v-if="resp.predicted_domain && resp.predicted_phish===false" dark:color-emerald-500 color-emerald-700>
+      <div i-carbon:thumbs-up text-2xl mx-2 inline-block/>
+      <p text-m>
+        {{ t('result.predicted_domain')}}
+      </p>
+      <span text-m opacity75> {{resp.predicted_domain}} </span>
+    </div>
+    <div v-if="resp.predicted_domain && resp.predicted_phish===true" dark:color-red-500 color-red-700>
+      <div i-carbon:thumbs-down text-2xl mx-2 inline-block/>
+      <p  class="text-sm">
+        {{ t('result.predicted_domain') }}
+      </p>
+      <span text-sm opacity75> {{resp.predicted_domain}} </span>
+    </div>
+    <div>
+      <p v-if="resp.predicted_conf" text-sm opacity50>
+        {{ t('result.predicted_conf') }} 
+      </p>
+      <span text-sm opacity75> {{resp.predicted_conf}} </span>
+    </div>
+    <div v-if="check_link_error">
+      <p color-red text-sm>
+        Check link failed please try again later...
+      </p>
+      <p color-red text-sm>
+        Error: {{ check_link_error }}
+      </p>
+    </div>
+
 
   </div>
 </template>

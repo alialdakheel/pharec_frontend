@@ -16,7 +16,7 @@ intro:
   whats-your-name: ما إسمك؟
   enter-url: ادخل رابط
 result:
-  website: الموقع
-  predicted_domain: النطاق المتوقع
-  predicted_conf: وثوق النموذج
+  website: ':الموقع'
+  predicted_domain: ':النطاق المتوقع'
+  predicted_conf: ':وثوق النموذج'
 not-found: صفحة غير موجودة

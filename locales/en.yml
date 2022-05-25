@@ -16,7 +16,7 @@ intro:
   whats-your-name: What's your name?
   enter-url: Enter URL
 result:
-  website: Website
-  predicted_domain: Predicted domain
-  predicted_conf: Predicted confidence
+  website: 'Website:'
+  predicted_domain: 'Predicted domain:'
+  predicted_conf: 'Predicted confidence:'
 not-found: Not found
