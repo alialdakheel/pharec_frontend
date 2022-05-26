@@ -85,23 +85,21 @@ const { t } = useI18n()
 
 <template>
   <div>
-    <section class="container m-auto">
-      <img 
-      :src="pharecLogo"
-      class="rounded m-auto object-center"
-      />
-    </section>
-
-    <p>
-      <a rel="noreferrer" href="https://pharec-dl.tech" target="_blank">
+    <div m-auto>
+      <RouterLink to="/" title="Pharec" icon-btn>
+        <img 
+        :src="pharecLogo"
+        rounded m-auto object-center
+        />
         {{ t('intro.name') }}
-      </a>
-    </p>
+      </RouterLink>
+    </div>
+
     <p>
-      <em text-sm opacity-75>{{ t('intro.desc') }}</em>
+      <em text-sm opacity-50>{{ t('intro.desc') }}</em>
     </p>
 
-    <div py-1 />
+    <div py-1/>
 
     <div p-1>
       <p text-sm inline>Example: </p>
@@ -146,7 +144,7 @@ const { t } = useI18n()
       </button>
     </div>
 
-    <div py-1 />
+    <div py-1/>
 
     <div>
       <p v-if="resp.url" class="text-sm opacity75">
@@ -155,7 +153,7 @@ const { t } = useI18n()
       <span text-sm opacity75> {{resp.url}} </span>
     </div>
 
-    <div py-1 />
+    <div py-1/>
 
     <section class="container m-auto object-center w-1/3 rounded-lg">
       <img v-if="resp.image_path" 
@@ -163,7 +161,7 @@ const { t } = useI18n()
       class="rounded m1"/>
     </section>
 
-    <div py-1 />
+    <div py-1/>
 
     <div v-if="resp.predicted_domain && resp.predicted_phish===false" dark:color-emerald-500 color-emerald-700>
       <div i-carbon:thumbs-up text-2xl mx-2 inline-block/>
@@ -193,7 +191,6 @@ const { t } = useI18n()
         Error: {{ check_link_error }}
       </p>
     </div>
-
 
   </div>
 </template>
