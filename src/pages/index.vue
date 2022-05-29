@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import NProgress from 'nprogress'
-// const base_url = 'http://localhost:8000'
-// const api_url = 'http://localhost:8000/api/v1'
+
 const base_url = ''
 const api_url = '/api/v1'
 const pharecLogo = new URL('/new-logo-pharec-64.png', import.meta.url).href
@@ -17,7 +16,7 @@ let resp = $ref({
 })
 let check_link_error = $ref('')
 
-const request_check = async (url: String) => {
+const request_check = async (url: string) => {
   NProgress.start()
   return fetch(`${api_url}/check_url`, {
     method: 'POST',
@@ -39,7 +38,7 @@ const request_check = async (url: String) => {
     return response.json()
   })
   .catch(error => {
-      throw new Error(`Check link error failed with ${error}`)
+      throw new Error(error)
   })
 }
 
@@ -166,7 +165,7 @@ const { t } = useI18n()
     <div v-if="resp.predicted_domain && resp.predicted_phish===false" dark:color-emerald-500 color-emerald-700>
       <div i-carbon:thumbs-up text-2xl mx-2 inline-block/>
       <p text-m>
-        {{ t('result.predicted_domain')}}
+        {{ t('result.predicted_domain') }}
       </p>
       <span text-m opacity75> {{resp.predicted_domain}} </span>
     </div>
