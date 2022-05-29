@@ -2,10 +2,10 @@
 title: About
 ---
 
-<div class="text-center">
+<div text-center opacity100>
   <!-- You can use Vue components inside markdown -->
-  <div i-carbon-dicom-overlay class="text-4xl -mb-6 m-auto" />
-  <h3>About</h3>
+  <div i-carbon-dicom-overlay class="text-2xl m-auto" />
+  <h4>About</h4>
 </div>
 
 

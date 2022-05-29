@@ -89,21 +89,21 @@ export default defineConfig({
       manifest: {
         name: 'Pharec',
         short_name: 'pharec',
-        theme_color: '#ffffff',
+        theme_color: '#e7e7e7',
         icons: [
           {
             src: '/new-logo-pharec-64.png',
-            sizes: '96x96',
+            sizes: '64x64',
             type: 'image/png',
           },
           {
             src: '/new-logo-pharec-128.png',
-            sizes: '96x96',
+            sizes: '128x128',
             type: 'image/png',
           },
           {
             src: '/new-logo-pharec-256.png',
-            sizes: '96x96',
+            sizes: '128x128',
             type: 'image/png',
           },
           {
