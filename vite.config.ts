@@ -103,7 +103,7 @@ export default defineConfig({
           },
           {
             src: '/new-logo-pharec-256.png',
-            sizes: '128x128',
+            sizes: '256x256',
             type: 'image/png',
           },
           {
