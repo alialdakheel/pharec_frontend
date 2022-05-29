@@ -46,7 +46,7 @@
   "../../../__uno.css": [],
   "src/main.ts": [],
   "index.html": [],
-  "assets/app.f0eef799.js-unocss-hash.css": [],
+  "assets/app.67d858b8.js-unocss-hash.css": [],
   "node_modules/.pnpm/workbox-window@6.5.3/node_modules/workbox-window/build/workbox-window.prod.es5.mjs": [
     "/assets/virtual_pwa-register.04637613.js"
   ],
@@ -54,24 +54,30 @@
     "/assets/virtual_pwa-register.04637613.js"
   ],
   "src/layouts/404.vue": [
-    "/assets/404.29de2791.js"
+    "/assets/404.673c7c0e.js"
   ],
   "src/layouts/home.vue": [
-    "/assets/home.29573a22.js"
+    "/assets/home.b580f5d9.js"
   ],
   "src/pages/README.md": [
-    "/assets/README.ee805e98.js"
+    "/assets/README.9b669ac7.js"
   ],
   "src/pages/[...all].vue": [
-    "/assets/_...all_.a9f37f30.js"
+    "/assets/_...all_.f749d0c2.js"
   ],
   "src/pages/about.md": [
-    "/assets/about.5c4f4126.js"
+    "/assets/about.fe6a26ed.js"
   ],
-  "src/stores/user.ts": [
-    "/assets/_name_.01f4aca9.js"
+  "src/stores/domain.ts": [
+    "/assets/supported_domains.bb5ed72f.js",
+    "/assets/supported_domains.7a1dae48.css"
   ],
-  "src/pages/hi/[name].vue": [
-    "/assets/_name_.01f4aca9.js"
+  "src/pages/supported_domains.vue?vue&type=style&index=0&lang.css": [
+    "/assets/supported_domains.bb5ed72f.js",
+    "/assets/supported_domains.7a1dae48.css"
+  ],
+  "src/pages/supported_domains.vue": [
+    "/assets/supported_domains.bb5ed72f.js",
+    "/assets/supported_domains.7a1dae48.css"
   ]
 }
