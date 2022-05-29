@@ -14,35 +14,32 @@ if (!supported_domains.length) {
         fetch_domains_error = error
     })
 }
-
 </script>
 
 <template>
-
-<div text-center>
-    <div i-carbon-directory-domain text-4xl m-auto />
-    <h3>Supported Domains</h3>
-    <div v-if="fetch_domains_error" color-red opacity50>
-        {{ fetch_domains_error}}
+    <div text-center>
+        <div i-carbon-directory-domain text-4xl m-auto />
+        <h3>Supported Domains</h3>
+        <div v-if="fetch_domains_error" color-red opacity50>
+            {{ fetch_domains_error}}
+        </div>
+        <div m-auto p-6 w-100 text-sm opacity75>
+            <table>
+            <thead>
+                <tr>
+                <th>#</th>
+                <th>Domain</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="(item, index) in supported_domains">
+                <td>{{ index + 1 }}</td>
+                <td>{{ item }}</td>
+                </tr>
+            </tbody>
+            </table> 
+        </div>
     </div>
-    <div m-auto p-6 w-100 text-sm opacity75>
-        <table>
-        <thead>
-            <tr>
-            <th>#</th>
-            <th>Domain</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr v-for="(item, index) in supported_domains">
-            <td>{{ index + 1 }}</td>
-            <td>{{ item }}</td>
-            </tr>
-        </tbody>
-        </table> 
-    </div>
-</div>
-
 </template>
 
 <style>
@@ -52,9 +49,13 @@ table {
   width: 80%;
 }
 
-td, th {
+td {
   /* border: 1px solid #dddddd; */
   text-align: left;
+  padding: 3px;
+}
+
+th {
   padding: 8px;
 }
 
