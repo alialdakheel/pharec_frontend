@@ -51,7 +51,7 @@ table {
 
 td {
   /* border: 1px solid #dddddd; */
-  text-align: left;
+  /* text-align: left; */
   padding: 3px;
 }
 
