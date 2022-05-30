@@ -92,6 +92,11 @@ export default defineConfig({
         theme_color: '#e7e7e7',
         icons: [
           {
+            src: '/new-logo-pharec-32.png',
+            sizes: '32x32',
+            type: 'image/png',
+          },
+          {
             src: '/new-logo-pharec-64.png',
             sizes: '64x64',
             type: 'image/png',
@@ -104,11 +109,6 @@ export default defineConfig({
           {
             src: '/new-logo-pharec-256.png',
             sizes: '256x256',
-            type: 'image/png',
-          },
-          {
-            src: '/pharec-96.PNG',
-            sizes: '96x96',
             type: 'image/png',
           },
         ],
