@@ -1,6 +1,6 @@
 <template>
   <main class="px-4 py-2 text-center text-gray-700 dark:text-gray-200">
-    <div mb-1 dark:color-amber-300 color-amber-700 text-sm dark:bg-amber-900 bg-amber-600 bg-opacity25 opacity50>
+    <div mb-1 dark:color-amber-300 color-amber-700 text-sm dark:bg-amber-900 bg-amber-600 bg-opacity25 opacity75>
       <RouterLink to="/supported_domains" title="supported domains" icon-btn>
         Warning: please be aware this is a alpha stage test demo,
         results are not completely reliable. Check supported domains.
