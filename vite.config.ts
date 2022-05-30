@@ -85,10 +85,10 @@ export default defineConfig({
     // https://github.com/antfu/vite-plugin-pwa
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.png', 'safari-pinned-tab.svg'],
+      includeAssets: ['favicon.png'],
       manifest: {
         name: 'Pharec',
-        short_name: 'pharec',
+        short_name: 'Pharec',
         theme_color: '#e7e7e7',
         icons: [
           {
