@@ -60,6 +60,7 @@ const check_url = async () => {
       predicted_conf: '',
       image_path: ''
     }
+    check_link_error = ''
     request_check(url)
     .then((data) => {
       if (data) {
@@ -125,7 +126,7 @@ const { t } = useI18n()
       type="url"
       autocomplete="false"
       p="x4 y2"
-      w="350px"
+      w="300px"
       text="center"
       bg="transparent"
       border="~ rounded gray-200 dark:gray-700"
