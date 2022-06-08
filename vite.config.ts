@@ -111,6 +111,17 @@ export default defineConfig({
             sizes: '256x256',
             type: 'image/png',
           },
+          {
+            src: '/new-logo-pharec-512.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+          {
+            src: '/new-logo-pharec-512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'any maskable'
+          },
         ],
       },
     }),
