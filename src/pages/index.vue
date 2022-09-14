@@ -73,7 +73,7 @@ const check_url = async () => {
 }
 const fill_example = (n: Number) => {
   if (n === 1)
-    url = 'https://apple.com'
+    url = 'https://www.apple.com'
   else if (n === 2)
     url = 'https://dropbox.com/login'
   else
@@ -107,7 +107,7 @@ const { t } = useI18n()
         px-2 py-0 text-sm rounded-full bg-teal-600 btn
         @click="fill_example(1)"
       >
-      apple.com
+      www.apple.com
       </button>
       <p pe-1 inline text-sm>,</p>
       <button
