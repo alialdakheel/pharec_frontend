@@ -7,6 +7,7 @@ const pharecLogo = new URL('/new-logo-pharec-64.png', import.meta.url).href
 const url_char_limit = 32
 
 let url = $ref('')
+let js_delay = $ref(false)
 let resp = $ref({
   url: '', 
   predicted_domain: '',
@@ -26,6 +27,7 @@ const request_check = async (url: string) => {
     },
     body: JSON.stringify({
       url,
+      js_delay,
       description: 'Sent by frontend',
     }),
   })
@@ -134,6 +136,31 @@ const { t } = useI18n()
       @keydown.enter="check_url"
     >
 
+
+    <!-- <div>
+      <div icon-btn>
+        <input
+          form-check-input
+          id="input-js-delay"
+          v-model="js_delay"
+          type="checkbox"
+          role="switch"
+          autocomplete="false"
+          p="x2 y2"
+          w="30px"
+          opacity-75
+          outline="none active:none"
+        >
+        <label
+          for="input-js-delay"
+          m-1
+          text-sm
+        >
+          Wait for JS to load
+        </label>
+      </div>
+    </div> -->
+
     <div>
       <button
         btn m-3 text-sm
@@ -142,6 +169,20 @@ const { t } = useI18n()
       >
         {{ t('button.check-url') }}
       </button>
+    </div>
+
+    <div>
+      <label for="input-js-delay" class="icon-btn relative mt-1">
+        <input v-model="js_delay" type="checkbox" id="input-js-delay" class="icon-btn sr-only">
+        <div class="icon-btn inline-block toggle-bg bg-gray-400 border-1 border-gray-400 h-5 w-9 rounded-full"></div>
+        <span
+          ml-1
+          text-sm
+          align-top
+        >
+          Wait for JS to load
+        </span>
+      </label>
     </div>
 
     <div py-1/>
@@ -194,6 +235,33 @@ const { t } = useI18n()
 
   </div>
 </template>
+
+<style>
+  .toggle-bg:after {
+    content: '';
+    @apply absolute
+    top-0.8
+    left-0.5
+    bg-light
+    dark:bg-dark
+    border
+    border-gray-400
+    rounded-full
+    h-4
+    w-4
+    transition 
+    shadow-sm
+  }
+
+  input:checked + .toggle-bg:after {
+    transform: translateX(100%);
+    @apply border-gray;
+  }
+
+  input:checked + .toggle-bg {
+    @apply bg-teal-600 border-teal-600;
+  }
+</style>
 
 <route lang="yaml">
 meta:
