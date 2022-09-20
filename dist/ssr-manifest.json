@@ -38,6 +38,7 @@
   "src/layouts/default.vue": [],
   "../../../@vite-plugin-vue-layouts/generated-layouts": [],
   "src/App.vue": [],
+  "src/pages/index.vue?vue&type=style&index=0&lang.css": [],
   "../../../@vite-plugin-pages/route-block": [],
   "src/pages/index.vue": [],
   "../../../@vite-plugin-pages/generated-pages?id=~pages": [],
@@ -46,7 +47,7 @@
   "../../../__uno.css": [],
   "src/main.ts": [],
   "index.html": [],
-  "assets/app.54ba9d83.js-unocss-hash.css": [],
+  "assets/app.572d4cb3.js-unocss-hash.css": [],
   "node_modules/.pnpm/workbox-window@6.5.3/node_modules/workbox-window/build/workbox-window.prod.es5.mjs": [
     "/assets/virtual_pwa-register.04637613.js"
   ],
@@ -54,30 +55,30 @@
     "/assets/virtual_pwa-register.04637613.js"
   ],
   "src/layouts/404.vue": [
-    "/assets/404.fad43457.js"
+    "/assets/404.27293d9d.js"
   ],
   "src/layouts/home.vue": [
-    "/assets/home.b0580d67.js"
+    "/assets/home.1b8c0cee.js"
   ],
   "src/pages/README.md": [
-    "/assets/README.1d573f94.js"
+    "/assets/README.da8db320.js"
   ],
   "src/pages/[...all].vue": [
-    "/assets/_...all_.96a82260.js"
+    "/assets/_...all_.3600ae27.js"
   ],
   "src/pages/about.md": [
-    "/assets/about.9e9aac00.js"
+    "/assets/about.89afc0d5.js"
   ],
   "src/stores/domain.ts": [
-    "/assets/supported_domains.ee6ea1c0.js",
+    "/assets/supported_domains.1e96f2c3.js",
     "/assets/supported_domains.d8e80af1.css"
   ],
   "src/pages/supported_domains.vue?vue&type=style&index=0&lang.css": [
-    "/assets/supported_domains.ee6ea1c0.js",
+    "/assets/supported_domains.1e96f2c3.js",
     "/assets/supported_domains.d8e80af1.css"
   ],
   "src/pages/supported_domains.vue": [
-    "/assets/supported_domains.ee6ea1c0.js",
+    "/assets/supported_domains.1e96f2c3.js",
     "/assets/supported_domains.d8e80af1.css"
   ]
 }
